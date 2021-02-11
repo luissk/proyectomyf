@@ -1,0 +1,113 @@
+$color1: #6ec6df;
+$color2: #f95710;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover{color: inherit;}
+
+/* HEADER */
+header{
+    background-color: $color1;
+    color: #fff;
+    .top{height: 50px;}
+    a{color: #fff;margin: 0 10px; font-size: .8em;}
+    .redes a{
+        font-size: 1em;
+    }
+    @media screen and (max-width: 480px){
+        .top .redes, .top .inout{
+            justify-content: center!important;
+        }
+    }
+}   
+/* FIN HEADER */
+
+/* NAV */
+nav.navbar{
+    .logo{
+        height: 60px;
+    }
+    .btn{
+        background-color: $color2;
+        color: #fff;
+    }
+}
+/* FIN NAV */
+
+/* CAROUSEL */
+.carousel{
+    border-top: 3px solid #999;
+    border-bottom: 4px solid #999;
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px 0;
+    }
+}
+/* FIN CAROUSEL */
+
+/* LAST PRODUCTS */
+.last-products{
+    color: #666;
+    .btn.btnMore{
+        background-color: $color1;
+        color: #fff;
+    }
+    @media screen and (max-width: 480px){
+        .row > div{
+            justify-content: center!important;
+            margin-bottom: 5px;
+            padding: 5px 0!important;
+        }
+    }
+    .products{
+        .product{
+            background-color: #f7f7f7;
+            padding: 5px 5px 0 5px;
+            text-align: center;
+            > a{
+                overflow: hidden;
+                display: block;
+            }            
+            img{transition: transform .3s ease;}
+            img:hover{
+                opacity: .9;
+                transform: scale(1.1,1.1);
+            }
+            h4{
+                font-size: 1em;
+                color: $color1;
+                height: 40px;
+            }
+            h2{
+                font-size: 1.5em;
+                color: $color2;
+                text-align: right;
+                background-color: #efefef;
+                padding: 5px 0;
+            }
+        }
+    }
+}
+/* FIN LAST PRODUCTS */
+
+/* FOOTER */
+.footer{
+    background-color: #000;
+    color: white;
+
+    .footer-info{
+        background-color: #222;
+    }
+}
+/* FIN FOOTER */
+
+

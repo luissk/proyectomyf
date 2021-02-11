@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: inherit;
+}
+
+/* HEADER */
+header {
+  background-color: #6ec6df;
+  color: #fff;
+}
+
+header .top {
+  height: 50px;
+}
+
+header a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: .8em;
+}
+
+header .redes a {
+  font-size: 1em;
+}
+
+@media screen and (max-width: 480px) {
+  header .top .redes, header .top .inout {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
+/* FIN HEADER */
+/* NAV */
+nav.navbar .logo {
+  height: 60px;
+}
+
+nav.navbar .btn {
+  background-color: #f95710;
+  color: #fff;
+}
+
+/* FIN NAV */
+/* CAROUSEL */
+.carousel {
+  border-top: 3px solid #999;
+  border-bottom: 4px solid #999;
+}
+
+.carousel .carousel-control-next-icon, .carousel .carousel-control-prev-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+}
+
+/* FIN CAROUSEL */
+/* LAST PRODUCTS */
+.last-products {
+  color: #666;
+}
+
+.last-products .btn.btnMore {
+  background-color: #6ec6df;
+  color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  .last-products .row > div {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    margin-bottom: 5px;
+    padding: 5px 0 !important;
+  }
+}
+
+.last-products .products .product {
+  background-color: #f7f7f7;
+  padding: 5px 5px 0 5px;
+  text-align: center;
+}
+
+.last-products .products .product > a {
+  overflow: hidden;
+  display: block;
+}
+
+.last-products .products .product img {
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+.last-products .products .product img:hover {
+  opacity: .9;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.last-products .products .product h4 {
+  font-size: 1em;
+  color: #6ec6df;
+  height: 40px;
+}
+
+.last-products .products .product h2 {
+  font-size: 1.5em;
+  color: #f95710;
+  text-align: right;
+  background-color: #efefef;
+  padding: 5px 0;
+}
+
+/* FIN LAST PRODUCTS */
+/* FOOTER */
+.footer {
+  background-color: #000;
+  color: white;
+}
+
+.footer .footer-info {
+  background-color: #222;
+}
+
+/* FIN FOOTER */
+/*# sourceMappingURL=styles.css.map */
